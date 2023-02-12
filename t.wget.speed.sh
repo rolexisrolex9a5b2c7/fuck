@@ -1,9 +1,9 @@
 #!/bin/bash
 # 2023-02-11  06:59:04 
 
-
+# measure speed between (storage,nic,cat5 cable,router,wifi,cat5 cable,nic,storage) 
     msg=$'parameter :  action   
-    Action defination:
+    action defination:
         ssd         ========== read file from ssd/LAN 
         ramdisk     ========== read file from ramdisk/LAN 
         hd          ========== read file from hd/LAN 
@@ -60,8 +60,6 @@ w_file=""
    cd /tmp
    wget ${w_file}
    sleep 1
-   file="${w_file##*/}"
-   echo ""
    rm ${file}
 
 ##############################
